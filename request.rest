@@ -1,0 +1,21 @@
+@api = http://localhost:5000
+
+###
+
+GET {{api}}/users
+
+###
+
+GET {{api}}/users/1
+
+###
+
+POST {{api}}/users
+Content-Type: application/json
+
+{
+  "firstname": "test",
+  "lastname": "test",
+  "email": "test",
+  "roles": ["Admin", "User"]
+}
